@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Имя автора</h1>
+
+<ol>
+{% for o in all_poems %}
+    <li>
+        <a href="/poem/{{ o.id }}">
+            {{ o.name }}&nbsp;
+        </a>
+    </li>
+{% endfor %}
+</ol>
+
+</body>
+</html>

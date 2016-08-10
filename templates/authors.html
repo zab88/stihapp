@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All authors</title>
+</head>
+<body>
+<ul>
+{% for o in all_authors %}
+    <li>
+        <a href="/author/{{ o.id }}">
+            {{ o.name }}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+</body>
+</html>
